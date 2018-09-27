@@ -4,6 +4,7 @@
 // you to run the test cases!
 
 import org.junit.*;
+
 import static org.junit.Assert.assertEquals;
 
 public class UtilTester {
@@ -18,7 +19,7 @@ public class UtilTester {
 
     @Test
     public void testComplexDivision() {
-        assertEquals(0.142857, MathUtils.divideNumbers(3, 21),  delta);
+        assertEquals(0.142857, MathUtils.divideNumbers(3.0, 21),  delta);
         assertEquals(6163694.153846, MathUtils.divideNumbers(80128024, 13), delta);
         assertEquals(0.384615, MathUtils.divideNumbers(5, 13), delta);
     }
